@@ -26,23 +26,20 @@ class Solution:
             # print(f"nums[i-1] = {nums[i-1]}")
             # print(f"nums[i] = {nums[i]}")
             # print(f"count1 = {count1}")
-            # print(f"maxConsecutive1 = {maxConsecutive1}")
+            # print(f"maxConsecutive1 = {str(maxConsecutive1)}")
                 
             if nums[i] == 1:
                 count1 = count1 + 1
-                # print(f'count1 +1 => {count1}')
+                # print(f'count1 +1 => {str(count1)}')
                 
                 if count1 > maxConsecutive1:
                     maxConsecutive1 = maxConsecutive1 + 1
-                    # print(f'maxConsecutive1 + 1=> {maxConsecutive1}')
+                    # print(f'maxConsecutive1 + 1=> {str(maxConsecutive1)}')
                     
             if nums[i] == 0:
                 count1 = 0
-                # print(f'count1 reset => {count1}')
-                
+                # print(f'count1 reset => {str(count1)}')
             
             # print("")
         
-        
-        # print(maxConsecutive)
         return maxConsecutive1
